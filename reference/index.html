@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Interface Design - Brain Computer Interface Agency</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- HLS.js for video streaming -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Neural</div>
+
+            <div class="nav-menu-wrapper">
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#work" class="nav-link">Work</a>
+                    <a href="#process" class="nav-link">Process</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <button class="btn-primary">
+                        Get Started
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Background Video -->
+        <video
+            id="heroVideo"
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="assets/hero_bg.jpeg"
+            class="hero-video"
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4">
+        </video>
+
+        <!-- Overlays -->
+        <div class="hero-overlay"></div>
+        <div class="hero-gradient"></div>
+
+        <!-- Content -->
+        <div class="hero-content">
+            <!-- Badge -->
+            <div class="badge">
+                <span class="badge-new">New</span>
+                <span class="badge-text">Introducing neural interface design systems</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="hero-heading blur-text" data-text="The Neural Interface Your Mind Deserves">
+                The Neural Interface Your Mind Deserves
+            </h1>
+
+            <!-- Subtext -->
+            <p class="hero-subtext">
+                Revolutionary design. Seamless connectivity. Built by AI, refined by neuroscience.
+                This is brain-computer interface design, wildly reimagined.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta">
+                <button class="btn-glass">
+                    Get Started
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </button>
+                <button class="btn-text">
+                    Watch the Film
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Partners Bar -->
+            <div class="partners-section">
+                <div class="partners-badge">Trusted by the teams behind</div>
+                <div class="partners-list">
+                    <span class="partner-name">Neuralink</span>
+                    <span class="partner-name">OpenBCI</span>
+                    <span class="partner-name">Kernel</span>
+                    <span class="partner-name">Emotiv</span>
+                    <span class="partner-name">Paradromics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="process" class="how-it-works-section">
+        <!-- Background Video -->
+        <div class="section-video-container">
+            <video
+                id="processVideo"
+                autoplay
+                loop
+                muted
+                playsinline
+                class="section-video">
+            </video>
+            <div class="video-fade-top"></div>
+            <div class="video-fade-bottom"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="section-content centered">
+            <div class="section-badge">How It Works</div>
+            <h2 class="section-heading">You dream it. We build it.</h2>
+            <p class="section-text">
+                Share your vision. Our AI analyzes neural patterns, designs intuitive interfaces,
+                generates adaptive code, and deploys seamlessly. All in days, not quarters.
+            </p>
+            <button class="btn-glass">
+                Get Started
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Chess Section -->
+    <section id="services" class="features-chess-section">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <div class="section-badge">Capabilities</div>
+                <h2 class="section-heading">Pro features. Zero complexity.</h2>
+            </div>
+
+            <!-- Row 1 - Text Left, Image Right -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3 class="feature-title">Designed to connect. Built to adapt.</h3>
+                    <p class="feature-description">
+                        Every synapse is intentional. Our AI studies neural signals across thousands of
+                        BCI sessions—then builds your interface to outperform them all.
+                    </p>
+                    <button class="btn-glass">
+                        Learn more
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="feature-image">
+                    <div class="placeholder-box"></div>
+                </div>
+            </div>
+
+            <!-- Row 2 - Image Left, Text Right -->
+            <div class="feature-row reverse">
+                <div class="feature-text">
+                    <h3 class="feature-title">It gets smarter. Automatically.</h3>
+                    <p class="feature-description">
+                        Your interface evolves on its own. AI monitors every thought pattern, gesture,
+                        and interaction—then optimizes in real time. No manual updates. Ever.
+                    </p>
+                    <button class="btn-glass">
+                        See how it works
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="feature-image">
+                    <div class="placeholder-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid Section -->
+    <section class="features-grid-section">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <div class="section-badge">Why Us</div>
+                <h2 class="section-heading">The difference is everything.</h2>
+            </div>
+
+            <!-- Grid -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Days, Not Months</h3>
+                    <p class="card-description">Concept to deployment at a pace that redefines fast.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Obsessively Crafted</h3>
+                    <p class="card-description">Every detail considered. Every element refined.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Built to Perform</h3>
+                    <p class="card-description">Layouts informed by data. Decisions backed by neuroscience.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Secure by Default</h3>
+                    <p class="card-description">Medical-grade protection comes standard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <!-- Background Video -->
+        <div class="section-video-container">
+            <video
+                id="statsVideo"
+                autoplay
+                loop
+                muted
+                playsinline
+                class="section-video desaturated">
+            </video>
+            <div class="video-fade-top"></div>
+            <div class="video-fade-bottom"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="stats-content">
+            <div class="stats-glass-box">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">500+</div>
+                        <div class="stat-label">Interfaces deployed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">99%</div>
+                        <div class="stat-label">Signal accuracy</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">10x</div>
+                        <div class="stat-label">Faster adaptation</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">3 days</div>
+                        <div class="stat-label">Average delivery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <div class="section-badge">What They Say</div>
+                <h2 class="section-heading">Don't take our word for it.</h2>
+            </div>
+
+            <!-- Grid -->
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "A complete rebuild in five days. Our neural interface went from concept to clinical trials faster than we thought possible. The AI understood our vision immediately."
+                    </p>
+                    <div class="testimonial-author">Dr. Sarah Chen</div>
+                    <div class="testimonial-role">CEO, Luminary Neuroscience</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "Signal quality up 4x in the first month. The adaptive algorithms learned our users' patterns and optimized the interface automatically. Unprecedented results."
+                    </p>
+                    <div class="testimonial-author">Marcus Webb</div>
+                    <div class="testimonial-role">Head of Engineering, Arcline BCI</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">
+                        "They didn't just design our interface. They reimagined how humans interact with machines. Every detail speaks to deep understanding of both design and neuroscience."
+                    </p>
+                    <div class="testimonial-author">Dr. Elena Voss</div>
+                    <div class="testimonial-role">Research Director, Helix Labs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Footer Section -->
+    <section id="pricing" class="cta-footer-section">
+        <!-- Background Video -->
+        <div class="section-video-container">
+            <video
+                id="ctaVideo"
+                autoplay
+                loop
+                muted
+                playsinline
+                class="section-video">
+            </video>
+            <div class="video-fade-top"></div>
+            <div class="video-fade-bottom"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="cta-content">
+            <h2 class="cta-heading">Your next interface starts here.</h2>
+            <p class="cta-text">
+                Book a free consultation. See what AI-powered neural interface design can do.
+            </p>
+            <div class="cta-buttons">
+                <button class="btn-glass">
+                    Book a Call
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </button>
+                <button class="btn-primary">
+                    View Pricing
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-copyright">© 2026 Neural Interface Studio</div>
+                <div class="footer-links">
+                    <a href="#privacy" class="footer-link">Privacy</a>
+                    <a href="#terms" class="footer-link">Terms</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
